@@ -2,7 +2,7 @@ FROM alpine:latest
 
 MAINTAINER Sebastian Dehn <sdehn@redhat.com>
 
-RUN apk --no-cache add curl 
+RUN apk --no-cache add curl nc
 
 COPY startup.sh /sbin/startup.sh
 RUN chmod +x /sbin/startup.sh
